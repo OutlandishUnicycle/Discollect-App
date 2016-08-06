@@ -3,9 +3,15 @@ import fetch from 'isomorphic-fetch';
 const optimisticCheckUser = (zip) => (
   {
     type: 'LOGIN_VALID',
+<<<<<<< HEAD
     zip, //
   }
 );
+=======
+    zip,
+  };
+};
+>>>>>>> Add search bar and update styles
 
 const userActions = {
   createUser: (username, password, email, zip) => {
@@ -46,8 +52,13 @@ const userActions = {
       })
       .then((res) => res.json())
       .then((response) => {
+<<<<<<< HEAD
         console.log(response);
         // dispatch(optimisticCheckUser(response));
+=======
+        console.log(response)
+        dispatch(optimisticCheckUser(response));
+>>>>>>> Add search bar and update styles
       })
       .catch((err) => {
         if (err) {

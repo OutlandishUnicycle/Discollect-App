@@ -27,6 +27,7 @@ const itemActions = {
           console.log(err);
         }
       });
+<<<<<<< HEAD
     }
   ),
   postNewListing: (listingData) => (
@@ -47,6 +48,16 @@ const itemActions = {
       });
     }
   ),
+=======
+    };
+  },
+  searchItem: (query) => {
+    return {
+      type: 'SUBMIT_SEARCH',
+      query: query,
+    };
+  }
+>>>>>>> Add search bar and update styles
 };
 
 export default itemActions;

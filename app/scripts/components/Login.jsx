@@ -20,10 +20,14 @@ const Login = ({ dispatchLogin }) => {
 
           username.value = '';
           password.value = '';
+<<<<<<< HEAD
           console.log(username.value);
           console.log(password.value);
         }}
       >
+=======
+        }}>
+>>>>>>> Add search bar and update styles
 
         <label htmlFor="username">username</label>
         <input ref={(node) => { username = node; }} id="username" />

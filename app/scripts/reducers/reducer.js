@@ -11,8 +11,13 @@ const users = (state = initUserState, action) => {
   switch (action.type) {
     case 'LOGIN_VALID':
       return Object.assign({}, state, {
+<<<<<<< HEAD
         valid: action.valid,
         zip: action.zip,
+=======
+        valid: true,
+        zip: action.zip
+>>>>>>> Add search bar and update styles
       });
     case 'ID_USER':
       return Object.assign({}, state, {
@@ -39,10 +44,24 @@ const items = (state = initItemState, action) => {
   }
 };
 
+const search = (state = '', action) => {
+  switch(action.type) {
+    case 'SUBMIT_SEARCH':
+      return action.query;
+    default:
+      return state;
+  }
+};
+
 const reducer = combineReducers({
   items,
   users,
+<<<<<<< HEAD
 });
+=======
+  search,
+})
+>>>>>>> Add search bar and update styles
 
 module.exports = {
   reducer,
