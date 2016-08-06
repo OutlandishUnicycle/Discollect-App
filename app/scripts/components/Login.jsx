@@ -36,8 +36,6 @@ let Login = ({ dispatchLogin }) => {
 
           username.value = '';
           password.value = '';
-          console.log(username.value);
-          console.log(password.value);
         }}>
 
         <label htmlFor="username">username</label>
