@@ -18,11 +18,6 @@ const Signup = () => {
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          if (!username.value.trim() &&
-              !password.value.trim() &&
-              !email.value.trim()) {
-            return;
-          }
 
           if (password.value !== confirm.value) {
             console.log('passwords do not match');
@@ -31,20 +26,20 @@ const Signup = () => {
           createUser(username.value, password.value, email.value, zip.value);
         }}>
 
-        <label>username</label>
-        <input ref={(node) => { username = node; }} />
+        <label htmlFor="username">username</label>
+        <input ref={(node) => { username = node; }} required />
 
-        <label>password</label>
-        <input ref={(node) => { password = node; }} />
+        <label htmlFor="password">password</label>
+        <input ref={(node) => { password = node; }} required />
 
-        <label>password confirm</label>
-        <input ref={(node) => { confirm = node; }} />
+        <label htmlFor="confirm">password confirm</label>
+        <input ref={(node) => { confirm = node; }} required />
 
-        <label>email</label>
-        <input ref={(node) => { email = node; }} />
+        <label htmlFor="email">email</label>
+        <input ref={(node) => { email = node; }} required />
 
-        <label>zip code</label>
-        <input ref={(node) => { zip = node; }} />
+        <label htmlFor="zip">zip code</label>
+        <input ref={(node) => { zip = node; }} required />
 
         <button type="submit">create</button>
       </form>

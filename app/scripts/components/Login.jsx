@@ -16,9 +16,6 @@ let Login = ({ dispatchLogin }) => {
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          if (!username.value.trim() && !password.value.trim()) {
-            return;
-          }
           dispatchLogin(username.value, password.value);
 
           username.value = '';
@@ -27,11 +24,11 @@ let Login = ({ dispatchLogin }) => {
           console.log(password.value);
         }}>
 
-        <label>username</label>
-        <input ref={(node) => { username = node; }} />
+        <label htmlFor="username">username</label>
+        <input ref={(node) => { username = node; }} required />
 
-        <label>password</label>
-        <input ref={(node) => { password = node; }} />
+        <label htmlFor="password">password</label>
+        <input ref={(node) => { password = node; }} required />
 
         <button type="submit">add</button>
       </form>
