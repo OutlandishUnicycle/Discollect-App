@@ -3,9 +3,15 @@ import fetch from 'isomorphic-fetch';
 const optimisticCheckUser = (zip) => (
   {
     type: 'LOGIN_VALID',
-    zip, //
+    zip,
+<<<<<<< HEAD
   }
 );
+
+=======
+  };
+};
+>>>>>>> 111e89f1b188f8edab1b014b65fbea44a06b4ef0
 
 const userActions = {
   createUser: (username, password, email, zip) => {

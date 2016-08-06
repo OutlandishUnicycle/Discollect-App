@@ -6,7 +6,6 @@ Nav Bar header
 nav {
   width: 960px;
   margin: 0 auto;
-  margin-bottom: 24px;
   border-bottom: 1px solid #000;
 }
 
@@ -40,6 +39,20 @@ h1 {
 .login,
 .signup {
   padding-right: 24px;
+}
+
+/*
+====================
+Search Bar
+====================
+ */
+
+.search_bar {
+  height: 60px;
+  width: 960px;
+  margin: 0 auto;
+  border-top: 1px double #000;
+  border-bottom: 2px double #000;
 }
 
 /*

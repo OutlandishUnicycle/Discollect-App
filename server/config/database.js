@@ -1,5 +1,5 @@
 var Sequelize = require('sequelize');
-var db = new Sequelize('dbdiscollect', 'root', 'cake');
+var db = new Sequelize('dbdiscollect', 'root', '');
 
 db
   .authenticate()
