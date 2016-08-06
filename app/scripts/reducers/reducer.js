@@ -11,7 +11,7 @@ const users = (state = initUserState, action) => {
   switch (action.type) {
     case 'LOGIN_VALID':
       return Object.assign({}, state, {
-        valid: action.valid,
+        valid: true,
         zip: action.zip
       });
     case 'ID_USER':
@@ -39,9 +39,19 @@ const items = (state = initItemState, action) => {
   }
 };
 
+const search = (state = '', action) => {
+  switch(action.type) {
+    case 'SUBMIT_SEARCH':
+      return action.query;
+    default:
+      return state;
+  }
+};
+
 const reducer = combineReducers({
   items,
   users,
+  search,
 })
 
 module.exports = {

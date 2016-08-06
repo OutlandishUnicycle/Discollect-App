@@ -3,7 +3,7 @@ import fetch from 'isomorphic-fetch';
 const optimisticCheckUser = (zip) => {
   return {
     type: 'LOGIN_VALID',
-    zip: zip,
+    zip,
   };
 };
 
@@ -47,7 +47,7 @@ const userActions = {
       .then((res) => res.json())
       .then((response) => {
         console.log(response)
-        // dispatch(optimisticCheckUser(response));
+        dispatch(optimisticCheckUser(response));
       })
       .catch((err) => {
         if (err) {
