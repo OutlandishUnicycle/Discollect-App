@@ -26,6 +26,7 @@ const Signup = () => {
           createUser(username.value, password.value, email.value, zip.value);
         }}
       >
+
         <label htmlFor="username">username</label>
         <input ref={(node) => { username = node; }} required />
 
