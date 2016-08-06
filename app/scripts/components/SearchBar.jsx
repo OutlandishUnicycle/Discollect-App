@@ -11,7 +11,6 @@ const SearchBar = ({ commitSearch }) => {
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          console.log('abcdef', search.value)
           commitSearch(search.value);
         }} >
         <input className="search_bar_input" ref={(node) => { search = node }}/>
