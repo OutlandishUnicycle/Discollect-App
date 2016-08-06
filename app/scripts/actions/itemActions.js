@@ -8,6 +8,12 @@ const optimisticSetItems = (items) => {
 };
 
 const itemActions = {
+  searchItem: (query) => {
+    return {
+      type: 'SUBMIT_SEARCH',
+      query: query,
+    };
+  },
   populateInitialListings: () => {
     return (dispatch) => {
       const url = 'http://localhost:3000/api/getAllListings';
