@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
+import NavBar from './NavBar.jsx';
 
 import { checkUserLogin } from '../actions/userActions.js';
 
@@ -25,6 +26,7 @@ const Login = ({ dispatchLogin }) => {
   let password;
   return (
     <div className="main_container">
+      <NavBar />
       <h2>Login</h2>
       <form
         onSubmit={(e) => {

@@ -8,4 +8,8 @@ const App = (props) => (
   </main>
 );
 
+App.propTypes = {
+  children: React.PropTypes.object,
+};
+
 export default App;
