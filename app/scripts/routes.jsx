@@ -1,13 +1,13 @@
 import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 
-import App from './App.jsx';
+import App from './components/App.jsx';
 // import Main from './Main.jsx';
-import ListView from './ListView.jsx';
-import Login from './Login.jsx';
-import Signup from './Signup.jsx';
-import Dashboard from './Dashboard.jsx';
-import CreateListing from './CreateListing.jsx';
+import ListView from './components/ListView.jsx';
+import Login from './containers/Login.jsx';
+import Signup from './containers/Signup.jsx';
+import Dashboard from './containers/Dashboard.jsx';
+import CreateListing from './containers/CreateListing.jsx';
 
 
 export default (
