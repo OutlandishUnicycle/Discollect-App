@@ -4,71 +4,72 @@ import { connect } from 'react-redux';
 // import Categories from './categories.jsx';
 import { postNewListing } from '../actions/actions.js';
 
-const CreateListing = (props) => {
-  let title;
-  let zip;
-  let image;
-  let category;
-  let description;
-  let condition;
-  return (
-    <div>
-      <div className="main_container">
-        <h1>Create a Listing</h1>
-        <form
-          onSubmit={(e) => {
-            e.preventDefault();
+let title;
+let zip;
+let image;
+let category;
+let description;
+let condition;
 
-            // if (!title.value.trim() && !zip.value.trim()) {
-            //   console.log('empty inputs');
-            //   return;
-            // }
+class CreateListing extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleFormSubmit = this.handleFormSubmit.bind(this);
+  }
+  handleFormSubmit(e) {
+    e.preventDefault();
 
-            const data = {
-              title: title.value,
-              zip: zip.value,
-              image: image.value,
-              category: category.value,
-              description: description.value,
-              condition: condition.value,
-            };
-            console.log(data);
-            props.dispatchCreateNewListing(data);
-          }}
-        >
-          <label htmlFor="title">Title</label>
-          <input ref={(node) => { title = node; }} id="title" required />
-          <label htmlFor="zip" >Zip Code</label>
-          <input ref={(node) => { zip = node; }} id="zip" required />
-          <label htmlFor="category">Categories</label>
-          <br />
-          <select ref={(node) => { category = node; }} id="category" required>
-            <option value="all-categories">All Categories</option>
-            <option value="appliances">Appliances</option>
-            <option value="fashion">Clothing, Shoes &amp; Jewelry</option>
-            <option value="books">Books</option>
-            <option value="electronics">Electronics</option>
-            <option value="tools">Tools &amp; Home Improvement</option>
-          </select>
-          <br />
-          <label htmlFor="condition" >Condition</label><br />
-          <select ref={(node) => { condition = node; }} id="condition" required>
-            <option value="5">New</option>
-            <option value="4">Excellent</option>
-            <option value="3">Good</option>
-            <option value="2">Fair</option>
-            <option value="1">Salvage</option>
-          </select><br />
-          <label htmlFor="image">Image</label><br />
-          <input ref={(node) => { image = node; }} type="file" accept="image/*" />
-          <label htmlFor="description">Description</label>
-          <textarea ref={(node) => { description = node; }} id="description" required />
-          <button type="submit">add</button>
-        </form>
+    const data = {
+      title: title.value,
+      zip: zip.value,
+      image: image.value,
+      category: category.value,
+      description: description.value,
+      condition: condition.value,
+    };
+    // console.log(data);
+    this.props.dispatchCreateNewListing(data);
+  }
+  render() {
+    return (
+      <div>
+        <div className="main_container">
+          <h1>Create a Listing</h1>
+          <form onSubmit={(e) => this.handleFormSubmit(e)}>
+            <label htmlFor="title">Title</label>
+            <input ref={(node) => { title = node; }} id="title" required />
+            <label htmlFor="zip" >Zip Code</label>
+            <input ref={(node) => { zip = node; }} id="zip" required />
+            <label htmlFor="category">Categories</label>
+            <br />
+            <select ref={(node) => { category = node; }} id="category" required>
+              <option value="all-categories">All Categories</option>
+              <option value="appliances">Appliances</option>
+              <option value="fashion">Clothing, Shoes &amp; Jewelry</option>
+              <option value="books">Books</option>
+              <option value="electronics">Electronics</option>
+              <option value="tools">Tools &amp; Home Improvement</option>
+            </select>
+            <br />
+            <label htmlFor="condition" >Condition</label><br />
+            <select ref={(node) => { condition = node; }} id="condition" required>
+              <option value="5">New</option>
+              <option value="4">Excellent</option>
+              <option value="3">Good</option>
+              <option value="2">Fair</option>
+              <option value="1">Salvage</option>
+            </select><br />
+            <label htmlFor="image">Image</label><br />
+            <input ref={(node) => { image = node; }} type="file" accept="image/*" />
+            <label htmlFor="description">Description</label>
+            <textarea ref={(node) => { description = node; }} id="description" required />
+            <button type="submit">add</button>
+          </form>
+        </div>
       </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
 CreateListing.propTypes = {
   dispatchCreateNewListing: React.PropTypes.func,
