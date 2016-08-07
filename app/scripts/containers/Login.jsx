@@ -26,7 +26,6 @@ const Login = ({ dispatchLogin }) => {
   let password;
   return (
     <div className="main_container">
-      <NavBar />
       <h2>Login</h2>
       <form
         onSubmit={(e) => {
