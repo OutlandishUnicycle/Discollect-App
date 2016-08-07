@@ -1,8 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import NavBar from './NavBar.jsx';
-
 import { checkUserLogin } from '../actions/userActions.js';
 
 const Login = ({ dispatchLogin }) => {
