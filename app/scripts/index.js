@@ -7,14 +7,14 @@ import logger from 'redux-logger';
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
-import { reducer } from './reducers/reducer';
+import rootReducer from './reducers/reducer';
 
 import Routes from './components/Routes.jsx';
 import itemActions from './actions/itemActions.js';
 
 const middleware = [thunk, logger()];
 
-const store = createStore(reducer, applyMiddleware(...middleware));
+const store = createStore(rootReducer, applyMiddleware(...middleware));
 
 store.dispatch(itemActions.populateInitialListings());
 

@@ -6,7 +6,9 @@
   "scripts": {
     "test": "./node_modules/.bin/mocha --reporter spec",
     "webpack": "webpack --progress --colors --watch",
-    "start": "nodemon server/server.js"
+    "start": "nodemon server/server.js",
+    "scss:dev": "node-sass -o public/css public/scss/styles.scss -w",
+    "scss:prod": "node-sass --output-style compressed -o public/css public/scss/styles.scss"
   },
   "repository": {
     "type": "git",
@@ -41,6 +43,7 @@
     "react-redux": "^4.4.5",
     "react-router": "^2.6.1",
     "redux": "^3.5.2",
+    "redux-form": "^5.3.2",
     "redux-logger": "^2.6.1",
     "redux-thunk": "^2.1.0",
     "sequelize": "^3.23.6",
@@ -62,6 +65,7 @@
     "eslint-plugin-jsx-a11y": "^2.0.1",
     "eslint-plugin-react": "^6.0.0",
     "html-webpack-plugin": "^2.22.0",
-    "mocha": "^3.0.1"
+    "mocha": "^3.0.1",
+    "node-sass": "^3.8.0"
   }
 }

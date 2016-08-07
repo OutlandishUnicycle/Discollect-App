@@ -1,0 +1,110 @@
+@import 'partials/reset.scss';
+@import 'partials/variables.scss';
+/*
+====================
+Nav Bar header
+====================
+ */
+
+nav {
+  width: 960px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #000;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+
+.auth_points {
+  padding: 6px;
+  display:inline-block;
+  text-align:right;
+}
+
+.app_points {
+  padding: 6px;
+  display:inline-block;
+  text-align: left;
+}
+
+.nav_title {
+  text-align: center;
+  font-size:24px;
+}
+
+.dashboard,
+.create {
+  padding-left: 24px;
+}
+
+
+.login,
+.signup {
+  padding-right: 24px;
+}
+
+/*
+====================
+Main Container
+====================
+ */
+.main_container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/*
+====================
+Inputs - Login / Signup
+====================
+ */
+
+input, textarea {
+  display: block;
+}
+
+/*
+====================
+Flex Grid
+====================
+ */
+
+
+
+
+
+ .outer_container {
+   display: flex;
+   max-width: 960px;
+   margin: 0 auto;
+   border: 1px solid black;
+ }
+
+ nav {
+   display: flex;
+   max-width: 960px;
+   margin: 0 auto;
+ }
+
+ .ListView_container {
+   display: flex;
+   max-width: 960px;
+   margin: 0 auto;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

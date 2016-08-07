@@ -32,7 +32,7 @@ const CreateListing = (props) => {
               description: description.value,
               condition: condition.value,
             };
-            // console.log(data);
+            console.log(data);
             props.dispatchCreateNewListing(data);
           }}
         >
