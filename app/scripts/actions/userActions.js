@@ -55,11 +55,12 @@ const userActions = {
       .then((res) => res.json())
       .then((response) => {
         console.log('checkuserlogin:: ', response);
-        // dispatch(optimisticCheckUser(response));
+        dispatch(optimisticCheckUser(response));
         dispatch({
           type: 'SAVE_USER_ID',
           userID: response.id,
         });
+        browserHistory.push('/');
         if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(position => {
             // console.log('>>>>>heard from navigator success>>>>', position)
@@ -95,9 +96,6 @@ const userActions = {
         } else {
           console.log('geolocation not supported');
         }
-      .then((res) => {
-        console.log('checkuserlogin:: ', res);
-        dispatch(optimisticCheckUser(res));
       })
       .catch((err) => {
         if (err) {
@@ -111,6 +109,7 @@ const userActions = {
     fetch(url)
     .then((response) => {
       console.log('on Logout', response);
+        browserHistory.push('/');
     })
     .catch((err) => {
       if (err) {

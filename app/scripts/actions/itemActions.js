@@ -82,6 +82,9 @@ const itemActions = {
       })
       .catch(err => {
         console.log('Search Error: ', err);
+      })
+    }
+  ),
 
   updateListingStatus: (listingID) => (
     (dispatch) => {
@@ -97,7 +100,7 @@ const itemActions = {
       .then((res) => res.json())
       .then((res) => {
         console.log('updated listing thingy!: ', res);
-        // dispatch(optimisticCheckUser(res));
+        dispatch(itemActions.getLatestListings());
       })
       .catch((err) => {
         if (err) {
