@@ -82,6 +82,9 @@ const itemActions = {
       })
       .catch(err => {
         console.log('Search Error: ', err);
+      })
+    }
+  ),
 
   updateListingStatus: (listingID) => (
     (dispatch) => {
