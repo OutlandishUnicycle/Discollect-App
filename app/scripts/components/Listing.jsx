@@ -106,7 +106,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => (
   {
    dispatchListingStatusChange: (listingID) => {
-    dispatch(itemActions.updateListingStatus(listingID))
+    dispatch(itemActions.updateListingStatus(listingID));
    },
   }
 );
