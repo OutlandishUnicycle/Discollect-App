@@ -145,8 +145,8 @@ class SearchBar extends React.Component {
           this.state.modalState ?
           (<div className='map_modal modal_on'>
             <div className="map_modal_content">
-              <GoogMap changeCoords={this.changeCoords} />
               <input type="range" name="miles" min="0" max="100" onChange={(e) => { this.handleSlide(e); }} />
+              <GoogMap changeCoords={this.changeCoords} />
               <span>{this.state.radius}</span>
             </div>
           </div>)
