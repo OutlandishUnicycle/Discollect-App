@@ -25,6 +25,7 @@ const CreateListing = ({ dispatchCreateNewListing,  id }) => {
     };
 
     reader.readAsDataURL(file);
+    console.log(e.target.files);
   };
 
   const changeCoords = (latitude, longitude) => {
