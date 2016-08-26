@@ -75,7 +75,7 @@ npm start
 
 ## System Architecture
 
-![discollect architecture](https://cloud.githubusercontent.com/assets/15058631/18021533/e1d91a76-6b9c-11e6-8b2a-3e21bc8bd724.png)
+![architecture](https://cloud.githubusercontent.com/assets/15058631/18021601/7f6aa854-6b9d-11e6-8379-fea7ae3f3b8d.png)
 
 
 
