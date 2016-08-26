@@ -20,7 +20,12 @@ David lundgren
 
 ## Usage
 
-> Some usage instructions
+- sign up
+- search for listings
+- call dibs on listing
+- collect
+- rate the giver
+- create your own listing
 
 ## Requirements
 
@@ -61,25 +66,17 @@ David lundgren
 "sequelize": "^3.23.6",
 "webpack": "^1.13.1"
 
-## Development
 
 ### Installing Dependencies
 
 From within the root directory:
-
-```sh
-sudo npm install -g bower
 npm install
-bower install
-```
+npm start
+
 ## System Architecture
 
-![discollect](https://cloud.githubusercontent.com/assets/15058631/18017252/7797186e-6b85-11e6-8e20-2e79bfb2a381.png)
+![discollect architecture](https://cloud.githubusercontent.com/assets/15058631/18021533/e1d91a76-6b9c-11e6-8b2a-3e21bc8bd724.png)
 
-
-### Roadmap
-
-View the project roadmap [here](LINK_TO_PROJECT_ISSUES)
 
 
 ## Contributing
