@@ -11,7 +11,7 @@ Put your unwanted or unneeded possessions up for grabs. Our online Discollect co
 
 List your possessions. Contact the interested party. Have it all collected. Minimum effort required!
 
-"Here at Discollect, we're vested in helping people make their lives less complicated, more manageable, happier. Every item discollected is one less thing demanding effort from you, and one happier member of your local community." - Jordan The Hitman Chong
+"Here at Discollect, we're vested in helping people make their lives less complicated, more manageable, happier. Every item discollected is one less thing demanding effort from you, and one happier member of your local community." - Jordan Chong, Co-Founder Discollect
 
 
   "I've discollected so much junk from my garage that I can actually park my car in there again!" Abraham, Miami FL
