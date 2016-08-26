@@ -103,7 +103,7 @@ class SearchBar extends React.Component {
                   distance: this.state.radius,
                   startFrom: 0,
                 };
-
+                console.log(data);
                 this.props.doElasticSearch(data);
                 this.state.value = '';
               }}
@@ -146,7 +146,7 @@ class SearchBar extends React.Component {
           (<div className='map_modal modal_on'>
             <div className="map_modal_content">
               <input type="range" name="miles" min="0" max="100" onChange={(e) => { this.handleSlide(e); }} />
-              <span>{this.state.radius}</span>
+              <span>{this.state.radius}(km)</span>
               <GoogMap changeCoords={this.changeCoords} />
             </div>
           </div>)

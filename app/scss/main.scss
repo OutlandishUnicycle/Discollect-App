@@ -819,7 +819,7 @@ map modal
     // border: 5px solid rgba(0, 0, 0, 0.8);
     input[type=range] {
       -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
-      width: 85%; /* Specific width is required for Firefox. */
+      width: 78%; /* Specific width is required for Firefox. */
       background: transparent; /* Otherwise white in Chrome */
       margin-bottom: 20px;
     }
