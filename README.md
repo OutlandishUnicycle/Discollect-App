@@ -74,7 +74,7 @@ bower install
 ```
 ## System Architecture
 
-![discollect architecture](https://cloud.githubusercontent.com/assets/15058631/17995842/e2257c1e-6b19-11e6-9157-1562f717becb.png)
+![discollect](https://cloud.githubusercontent.com/assets/15058631/18017252/7797186e-6b85-11e6-8e20-2e79bfb2a381.png)
 
 
 ### Roadmap
