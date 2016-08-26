@@ -77,7 +77,9 @@ npm start
 
 ![architecture](https://cloud.githubusercontent.com/assets/15058631/18021601/7f6aa854-6b9d-11e6-8379-fea7ae3f3b8d.png)
 
+##Database
 
+<img width="654" alt="screen shot 2016-08-26 at 4 00 27 pm" src="https://cloud.githubusercontent.com/assets/15058631/18023075/96d07364-6ba9-11e6-82b8-f99617a20b28.png">
 
 ## Contributing
 
